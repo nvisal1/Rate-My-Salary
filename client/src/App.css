@@ -7,6 +7,9 @@
   width: 30%;
   text-align: center;
   padding-top: 10%;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
 }
 
 .Rate-My-Salary__result-card {
