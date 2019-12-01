@@ -1,0 +1,19 @@
+.card {
+    background-color: #FF6699;
+    border-radius: 5px;
+    height: 150px;
+    font-family: 'arial black';
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+  
+.card__title {
+    margin-top: 5%;
+    color: white;
+    font-size: 18px;
+}
+
+.card__value {
+    margin-top: 5%;
+    color: white;
+    font-size: 36px;
+}

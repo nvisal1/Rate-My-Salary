@@ -1,4 +1,4 @@
-.Salary-Prediction__form-card {
+.Rate-My-Salary__form-card {
   position: absolute;
   top: 0;
   left: 0;
@@ -6,52 +6,10 @@
   height: 100%;
   width: 30%;
   text-align: center;
+  padding-top: 10%;
 }
 
-.Salary-Prediction__form-card__title {
-  margin-top: 230px;
-  margin-bottom: 100px;
-  font-family: 'arial';
-  color: #FF6699;
-  font-size: 48px;
-}
-
-.form-card__form__input-wrapper {
-  margin-top: 50px;
-}
-
-.form__input-wrapper__input {
-  border: none;
-  background-color: #ECECEC;
-  height: 56px;
-  width: 404px;
-  border-radius: 50px;
-  color: #FF6699;
-  margin: auto;
-  outline: none;
-  padding-left: 20px;
-  font-size: 18px;
-}
-
-.form__input-wrapper__input::placeholder {
-  color: #FF6699;
-}
-
-.form-card__form__submit-wrapper {
-  margin-top: 100px;
-}
-
-.form__submit-wrapper__submit {
-  border: none;
-  background-color: #FF6699;
-  height: 84px;
-  width: 201px;
-  border-radius: 5px;
-  color: #FAFAFA;
-  font-size: 24px;
-}
-
-.Salary-Prediction__result-card {
+.Rate-My-Salary__result-card {
   position: absolute;
   top: 0;
   right: 0;
@@ -59,50 +17,4 @@
   height: 100%;
   width: 70%;
   text-align: center;
-}
-
-.Salary-Prediction__result-card__title {
-  margin-top: 10%;
-  margin-bottom: 100px;
-  font-family: 'arial';
-  color: #FF6699;
-  font-size: 48px;
-}
-
-.Salary-Prediction__result-card__results {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.Salary-Prediction__result-card__button {
-  border: none;
-  background-color: #FF6699;
-  height: 84px;
-  width: 201px;
-  border-radius: 5px;
-  color: #FAFAFA;
-  font-size: 24px;
-}
-
-.result-card__results__result {
-  background-color: #FF6699;
-  border-radius: 5px;
-  height: 150px;
-  font-family: 'arial black';
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.results__result__title {
-  margin-top: 5%;
-  color: white;
-  font-size: 18px;
-}
-
-.results__result__value {
-  margin-top: 5%;
-  color: white;
-  font-size: 36px;
 }
