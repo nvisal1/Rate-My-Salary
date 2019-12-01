@@ -12,9 +12,9 @@ def predictSalary():
     if experience is None:
         return jsonify({"Error": "Bad Request"}), 400
     else:
-        loaded_model = joblib.load('../Simple_Linear_Regression/model.sav')
+        loaded_model = joblib.load('./model.sav')
         result = loaded_model.predict([[float(experience)]])
         return jsonify({"predicted_salary": result[0]}), 200
 
 if __name__ == '__main__':
-  app.run(debug=True)
+  app.run(debug=True, host='0.0.0.0')
