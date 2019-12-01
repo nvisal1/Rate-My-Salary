@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import { constants } from './constants';
 import { getSalaryPrediction } from './service';
-import { Button } from './components/button/button';
 import { InputProps } from './components/input/input';
-import { Card, CardProps } from './components/card/card'; 
-import { Text } from './components/text/text';
+import { CardProps } from './components/card/card'; 
 import { SlidingPanel } from './components/sliding-panel/sliding_panel';
 import { InputForm } from './components/input-form/input-form';
 import { ResultDisplay } from './components/result-display/result-display';
