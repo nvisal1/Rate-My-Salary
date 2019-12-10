@@ -21,7 +21,7 @@ regressor.fit(X_train, y_train)
 
 import joblib
 
-filename = 'model.sav'
+filename = '../REST-API/model.sav'
 joblib.dump(regressor, filename)
 loaded_model = joblib.load(filename)
 result = loaded_model.predict([X_test[0]])

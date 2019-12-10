@@ -1,7 +1,8 @@
 import axios from 'axios';
+import config from './config';
 
 const SERVER = axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: config.API_ROUTE,
 });
 
 export async function getSalaryPrediction(params: { experience: number }) {
