@@ -1,0 +1,28 @@
+name: Image Publication
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  label:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - run: docker build -t nvisal1/rate-my-salary-client ./client
+    - run: docker build -t nvisal1/rate-my-salary-prediction-service ./REST-API
+    - name: Publish Docker Client Image
+      uses: manusa/actions-publish-docker@v1.0.1
+      with:
+        name: nvisal1/rate-my-salary-client
+        username: $DOCKER_USERNAME
+        password: $DOCKER_PASSWORD
+    - name: Publish Docker Prediction Service Image
+      uses: manusa/actions-publish-docker@v1.0.1
+      with:
+        name: nvisal1/rate-my-salary-prediction-service
+        username: $DOCKER_USERNAME
+        password: $DOCKER_PASSWORD
