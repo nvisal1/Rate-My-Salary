@@ -7,7 +7,7 @@ Rate My Salary is a web application that predicts a person's salary. It does thi
 Simply run `docker-compose up` to start the development environment.
 The source code for the client and REST API are attached as volumes for development ease.
 
-This environment uses `./client/Dockerfile.dev`, not  `./client/Dockerfile`.
+This environment uses `./client/Dockerfile.dev` to build the client, not  `./client/Dockerfile`.
 `./client/Dockerfile` uses NGINX and is used only in the production environment seen below.
 
 ## Retrain The Simple Linear Regression Model
@@ -24,7 +24,7 @@ Although the app is not hosted, there is Kubernetes configuration for building a
 
 ### Step 1: Install Minikube & Kubectl
 
-kubectl docs: [https://kubernetes.io/docs/tasks/tools/install-kubectl/]
+kubectl docs: [https://kubernetes.io/docs/tasks/tools/install-kubectl/]__
 Minikube docs: [https://kubernetes.io/docs/tasks/tools/install-minikube/]
 
 ### Step 2: Start & Configure Minikube
@@ -55,7 +55,7 @@ To access the application, open your browser and paste the IP in the address bar
 
 ## Docker Images
 
-The production client image can be found at `[https://hub.docker.com/repository/docker/nvisal1/rate-my-salary-client](https://hub.docker.com/repository/docker/nvisal1/rate-my-salary-client)
+The production client image can be found at [https://hub.docker.com/repository/docker/nvisal1/rate-my-salary-client](https://hub.docker.com/repository/docker/nvisal1/rate-my-salary-client)
 
 The prediction service image can be found at
 [https://hub.docker.com/repository/docker/nvisal1/rate-my-salary-prediction-service](https://hub.docker.com/repository/docker/nvisal1/rate-my-salary-prediction-service)
