@@ -13,16 +13,16 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Publish Docker Client Image
-      working-directory: ./client
-      uses: manusa/actions-publish-docker@v1.0.1
+      uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
         name: nvisal1/rate-my-salary-client
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
+        dockerfile: ./client
     - name: Publish Docker Prediction Service Image
-      working-directory: ./REST-API
-      uses: manusa/actions-publish-docker@v1.0.1
+      uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
         name: nvisal1/rate-my-salary-prediction-service
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
+        dockerfile: ./REST-API
