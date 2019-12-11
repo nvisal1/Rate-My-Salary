@@ -5,22 +5,22 @@ on:
       - master
 
 jobs:
-  label:
+  publish-images:
 
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@v1
-    - run: docker build -t nvisal1/rate-my-salary-client ./client
-    - run: docker build -t nvisal1/rate-my-salary-prediction-service ./REST-API
     - name: Publish Docker Client Image
+      working-directory: ./client
       uses: manusa/actions-publish-docker@v1.0.1
       with:
         name: nvisal1/rate-my-salary-client
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
     - name: Publish Docker Prediction Service Image
+      working-directory: ./REST-API
       uses: manusa/actions-publish-docker@v1.0.1
       with:
         name: nvisal1/rate-my-salary-prediction-service
