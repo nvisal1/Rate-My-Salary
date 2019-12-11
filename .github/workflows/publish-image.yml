@@ -16,10 +16,11 @@ jobs:
       run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password-stdin ${{ secrets.DOCKER_PASSWORD }}
     - name: Build & Publish Docker Client Image
       working-directory: ./client
-      run: docker build -t nvisal1/rate-my-salary-client
-      run: docker push nvisal1/rate-my-salary-client
+      run: |
+        docker build -t nvisal1/rate-my-salary-client
+        docker push nvisal1/rate-my-salary-client
     - name: Build & Publish Docker Prediction Service Image
       working-directory: ./REST-API
-      run: docker build -t nvisal1/rate-my-salary-prediction-service
-      run: docker push nvisal1/rate-my-salary-prediction-service
-      
+      run: |
+        docker build -t nvisal1/rate-my-salary-prediction-service
+        docker push nvisal1/rate-my-salary-prediction-service
