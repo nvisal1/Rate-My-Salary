@@ -18,11 +18,11 @@ jobs:
         name: nvisal1/rate-my-salary-client
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        dockerfile: ./client
+        dockerfile: ./client/Dockerfile
     - name: Publish Docker Prediction Service Image
       uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
         name: nvisal1/rate-my-salary-prediction-service
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        dockerfile: ./REST-API
+        dockerfile: ./REST-API/Dockerfile
