@@ -24,7 +24,8 @@ Although the app is not hosted, there is Kubernetes configuration for building a
 
 ### Step 1: Install Minikube & Kubectl
 
-kubectl docs: [https://kubernetes.io/docs/tasks/tools/install-kubectl/]__
+kubectl docs: [https://kubernetes.io/docs/tasks/tools/install-kubectl/]
+
 Minikube docs: [https://kubernetes.io/docs/tasks/tools/install-minikube/]
 
 ### Step 2: Start & Configure Minikube
